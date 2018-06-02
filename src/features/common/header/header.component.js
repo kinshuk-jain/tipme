@@ -15,7 +15,7 @@ export const Header = (props) => {
 
   return (
     <View {...headerProps} style={styles.outerContainer}>
-      <StatusBar barStyle="dark-content" {...statusBarProps} />
+      <StatusBar barStyle="light-content" {...statusBarProps} />
       <TouchableOpacity style={styles.innerContainer} activeOpacity={0.5}>
         {children}
       </TouchableOpacity>

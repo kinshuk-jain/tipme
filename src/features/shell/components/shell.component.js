@@ -1,18 +1,15 @@
 import React, { PureComponent } from 'react';
 import { View } from 'react-native';
 
-// import { HomeScreen } from '../../home/components';
-// import { AccountScreen } from '../../accounts/components';
-import { PostOrderScreen } from '../../postOrder/components';
+import { Navigator } from '../../navigator/navigator.component';
 import { styles } from './shell.styles';
 
+// TODO  - add navigation to redux
 export class ShellComponent extends PureComponent {
   render() {
     return (
       <View style={styles.container}>
-        {/* <HomeScreen /> */}
-        {/* <AccountScreen /> */}
-        <PostOrderScreen />
+        <Navigator />
       </View>
     );
   }

@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     height: Platform.OS === 'ios' ? 70 : 70 - getStatusBarHeight(),
     ...Platform.select({
       ios: {
-        top: getStatusBarHeight(),
+        marginTop: getStatusBarHeight(),
       },
     }),
   },

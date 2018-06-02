@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import { View, ScrollView } from 'react-native';
+import PropTypes from 'prop-types';
 import { Footer, CustomText } from '../../../common';
 import {
   AddButton,
@@ -7,11 +8,15 @@ import {
   HorizontalRule,
   BackHeader,
 } from '../../../library/components';
+import { INavigate } from '../../../../types/types';
 
-import { styles } from './accountScreen.styles';
-import { addButtonData, balanceButtonData, statusData } from './data';
+import { styles } from './account.styles';
 
-export class AccountScreen extends PureComponent {
+export class Account extends PureComponent {
+  static navigationOptions = {
+    header: <BackHeader />,
+  };
+
   renderTransaction = (data, i) => (
     <View style={styles.transaction} key={i}>
       <CustomText wrapperStyle={styles.label} textStyle={styles.labelText}>
@@ -26,19 +31,24 @@ export class AccountScreen extends PureComponent {
   )
 
   render() {
+    const { navigation, data } = this.props;
     return (
       <View style={styles.container}>
-        <BackHeader />
         <ScrollView style={styles.scroller}>
-          <BalanceButton {...balanceButtonData} />
-          <AddButton text={addButtonData.text} />
+          <BalanceButton {...data.balanceButtonData} />
+          <AddButton text={data.addButtonData.text} />
           <HorizontalRule />
           {
-            statusData.map((data, i) => this.renderTransaction(data, i))
+            data.statusData.map((info, i) => this.renderTransaction(info, i))
           }
         </ScrollView>
-        <Footer />
+        <Footer navigation={navigation} />
       </View>
     );
   }
 }
+
+Account.propTypes = {
+  navigation: INavigate,
+  data: PropTypes.object,
+};

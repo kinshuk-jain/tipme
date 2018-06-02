@@ -1,18 +1,14 @@
-import { StyleSheet, Platform } from 'react-native';
-// import { COLORS } from '../../../config';
+import { StyleSheet } from 'react-native';
+import { COLORS } from '../../../config';
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: COLORS.WHITE,
   },
   scroller: {
     flex: 1,
-    marginTop: 20,
-    ...Platform.select({
-      android: {
-        marginTop: 0,
-      },
-    }),
+    marginTop: 0,
   },
   label: {
     flex: 1,
@@ -22,6 +18,6 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   transaction: {
-    marginTop: 15,
+    marginVertical: 15,
   },
 });

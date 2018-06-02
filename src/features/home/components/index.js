@@ -3,4 +3,4 @@
  */
 
 export { HomeHeader } from './header/header.component';
-export { HomeScreen } from './homeScreen/home.component';
+export { Home } from './home/home.component';

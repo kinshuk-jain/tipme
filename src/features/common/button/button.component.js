@@ -61,7 +61,7 @@ export class Button extends Component {
           useForeground={useForeground && Touchable.canUseNativeForeground()}
           background={
             Platform.Version > 21 && !disabled
-              ? Touchable.Ripple(COLORS.GREY_MYSTIC)
+              ? Touchable.Ripple(COLORS.SHARK)
               : Touchable.SelectableBackground()
           }
         >

@@ -10,3 +10,13 @@ export const IChildren = PropTypes.oneOfType([
   PropTypes.arrayOf(PropTypes.element),
 ]);
 
+export const INavigate = PropTypes.shape({
+  navigate: PropTypes.func,
+  goBack: PropTypes.func,
+  isFocused: PropTypes.func,
+  addListener: PropTypes.func,
+  state: PropTypes.object,
+  setParams: PropTypes.func,
+  getParam: PropTypes.func,
+  dispatch: PropTypes.func,
+});
