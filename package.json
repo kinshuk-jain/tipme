@@ -1,0 +1,37 @@
+{
+  "name": "tipme",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "flow": "flow",
+    "lint": "eslint ./src",
+    "lint-fix": "eslint --fix ./src"
+  },
+  "dependencies": {
+    "prop-types": "15.6.1",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-navigation": "2.0.4",
+    "react-redux": "5.0.7",
+    "redux": "4.0.0",
+    "redux-thunk": "2.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "8.2.3",
+    "babel-jest": "23.0.1",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "15.0.2",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.1.0",
+    "flow-bin": "0.67.1",
+    "jest": "23.0.1",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
