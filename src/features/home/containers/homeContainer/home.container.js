@@ -7,6 +7,7 @@ import { data } from './data';
 export class HomeScreen extends Component {
   static navigationOptions = {
     header: <HomeHeader />,
+    title: 'Home',
   };
 
   onAccountBtnClick = () => {

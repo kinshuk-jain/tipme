@@ -11,6 +11,7 @@ export class AccountScreen extends Component {
     const { onBackClick } = navigation.state.params || {};
     return {
       header: <BackHeader onBackClick={onBackClick} />,
+      title: 'Accounts',
     };
   };
 
