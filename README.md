@@ -25,6 +25,17 @@
 
 When you change file names, metro bundler will not update with hot reloading/live reloading. You have to either stop and restart the bundler or run `watchman watch-del-all && react-native start --reset-cache`
 
+### running flow
+* cd to the project
+* run command `npm run flow`
+
+### running tests
+* cd to the project
+* run command `npm run test`
+
+### running eslint
+* cd to the project
+* run command `npm run lint` or `npm run lint-fix`
 
 ### Generating minified bundle
 `react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios`

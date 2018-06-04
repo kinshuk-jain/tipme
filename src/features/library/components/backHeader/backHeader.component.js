@@ -5,6 +5,7 @@ import { Header, CustomText } from '../../../common';
 
 import { styles } from './backHeader.styles';
 
+// TODO  - add withNavigation HOC from react navigation
 export const BackHeader = ({ onBackClick, ...props }) => (
   <Header {...props}>
     <View style={styles.container}>

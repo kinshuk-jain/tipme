@@ -4,7 +4,6 @@ import { View } from 'react-native';
 import { Navigator } from '../../navigator/navigator.component';
 import { styles } from './shell.styles';
 
-// TODO  - add navigation to redux
 export class ShellComponent extends PureComponent {
   render() {
     return (

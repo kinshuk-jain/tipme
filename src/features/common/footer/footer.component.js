@@ -4,6 +4,7 @@ import { styles } from './footer.styles';
 
 import { INavigate } from '../../../types/types';
 
+// TODO  - add withNavigation HOC from react navigation
 export const Footer = ({ navigation, ...props }) => (
   <View {...props} style={styles.container}>
     <Text onPress={() => navigation.navigate('Home')} style={styles.widget}>accounts</Text>
