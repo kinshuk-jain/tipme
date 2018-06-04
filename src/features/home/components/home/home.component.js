@@ -5,11 +5,11 @@ import { Footer } from '../../../common';
 import { AddButton, BalanceButton } from '../../../library/components';
 
 import { styles } from './home.styles';
-import { INavigate } from '../../../../types/types';
+// import { INavigate } from '../../../../types/types';
 
 export class Home extends PureComponent {
   render() {
-    const { onAccountBtnClick, navigation, data } = this.props;
+    const { onAccountBtnClick, /* navigation, */ data } = this.props;
     return (
       <View style={styles.container}>
         <ScrollView style={styles.scroller}>
@@ -20,7 +20,7 @@ export class Home extends PureComponent {
           }
           <AddButton text={data.addButtonData.text} />
         </ScrollView>
-        <Footer navigation={navigation} />
+        <Footer />
       </View>
     );
   }
@@ -29,5 +29,5 @@ export class Home extends PureComponent {
 Home.propTypes = {
   onAccountBtnClick: PropTypes.func,
   data: PropTypes.object,
-  navigation: INavigate,
+  // navigation: INavigate,
 };

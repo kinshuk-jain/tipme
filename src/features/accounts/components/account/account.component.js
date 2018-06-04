@@ -6,17 +6,12 @@ import {
   AddButton,
   BalanceButton,
   HorizontalRule,
-  BackHeader,
 } from '../../../library/components';
-import { INavigate } from '../../../../types/types';
+// import { INavigate } from '../../../../types/types';
 
 import { styles } from './account.styles';
 
 export class Account extends PureComponent {
-  static navigationOptions = {
-    header: <BackHeader />,
-  };
-
   renderTransaction = (data, i) => (
     <View style={styles.transaction} key={i}>
       <CustomText wrapperStyle={styles.label} textStyle={styles.labelText}>
@@ -31,7 +26,7 @@ export class Account extends PureComponent {
   )
 
   render() {
-    const { navigation, data } = this.props;
+    const { /* navigation, */ data } = this.props;
     return (
       <View style={styles.container}>
         <ScrollView style={styles.scroller}>
@@ -42,13 +37,13 @@ export class Account extends PureComponent {
             data.statusData.map((info, i) => this.renderTransaction(info, i))
           }
         </ScrollView>
-        <Footer navigation={navigation} />
+        <Footer />
       </View>
     );
   }
 }
 
 Account.propTypes = {
-  navigation: INavigate,
+  // navigation: INavigate,
   data: PropTypes.object,
 };

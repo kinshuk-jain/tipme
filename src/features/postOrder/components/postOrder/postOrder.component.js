@@ -4,18 +4,13 @@ import PropTypes from 'prop-types';
 import {
   AddButton,
   HorizontalRule,
-  BackHeader,
 } from '../../../library/components';
 import { CustomText, Footer } from '../../../common';
 
 import { styles } from './postOrder.styles';
-import { INavigate } from '../../../../types/types';
+// import { INavigate } from '../../../../types/types';
 
 export class PostOrder extends PureComponent {
-  static navigationOptions = {
-    header: <BackHeader />,
-  };
-
   clipboardCopy = () => {
     Clipboard.setString(this.props.data.transactionUrl.url);
     // eslint-disable-next-line
@@ -23,7 +18,7 @@ export class PostOrder extends PureComponent {
   }
 
   render() {
-    const { navigation, data } = this.props;
+    const { /* navigation, */ data } = this.props;
     return (
       <View style={styles.container}>
         <ScrollView style={styles.scroller}>
@@ -41,13 +36,13 @@ export class PostOrder extends PureComponent {
           </View>
           <CustomText wrapperStyle={styles.centerContent}>{data.message.metamask}</CustomText>
         </ScrollView>
-        <Footer navigation={navigation} />
+        <Footer />
       </View>
     );
   }
 }
 
 PostOrder.propTypes = {
-  navigation: INavigate,
+  // navigation: INavigate,
   data: PropTypes.object,
 };

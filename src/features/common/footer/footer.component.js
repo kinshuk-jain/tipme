@@ -1,11 +1,11 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { styles } from './footer.styles';
+import { withNavigation } from 'react-navigation';
 
+import { styles } from './footer.styles';
 import { INavigate } from '../../../types/types';
 
-// TODO  - add withNavigation HOC from react navigation
-export const Footer = ({ navigation, ...props }) => (
+const CustomFooter = ({ navigation, ...props }) => (
   <View {...props} style={styles.container}>
     <Text onPress={() => navigation.navigate('Home')} style={styles.widget}>accounts</Text>
     <Text onPress={() => navigation.navigate('PostOrder')} style={styles.transfer}>Transfer</Text>
@@ -13,6 +13,8 @@ export const Footer = ({ navigation, ...props }) => (
   </View>
 );
 
-Footer.propTypes = {
+CustomFooter.propTypes = {
   navigation: INavigate,
 };
+
+export const Footer = withNavigation(CustomFooter);
