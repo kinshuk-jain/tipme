@@ -1,3 +1,6 @@
+/**
+ * Contains all compount proptypes
+ */
 import PropTypes from 'prop-types';
 
 export const IStyle = PropTypes.oneOfType([
@@ -20,3 +23,8 @@ export const INavigate = PropTypes.shape({
   getParam: PropTypes.func,
   dispatch: PropTypes.func,
 });
+
+export const IImageSource = PropTypes.oneOfType([
+  PropTypes.string,
+  PropTypes.object,
+]).isRequired;

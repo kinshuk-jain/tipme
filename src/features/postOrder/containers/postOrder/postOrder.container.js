@@ -1,9 +1,11 @@
 /* eslint-disable arrow-body-style */
 import React, { Component } from 'react';
-import { PostOrder } from '../../components';
+import { PostOrder, ConfirmTransaction } from '../../components';
 import { BackHeader } from '../../../library/components';
 import { INavigate } from '../../../../types/types';
 import { data } from './data';
+
+const HAVE_PVT_KEY = true;
 
 export class PostOrderScreen extends Component {
   static navigationOptions = ({ navigation }) => {
@@ -16,7 +18,9 @@ export class PostOrderScreen extends Component {
 
   render() {
     const { navigation } = this.props;
-    return <PostOrder data={data} navigation={navigation} />;
+    return HAVE_PVT_KEY
+      ? (<ConfirmTransaction />)
+      : (<PostOrder data={data} navigation={navigation} />);
   }
 }
 

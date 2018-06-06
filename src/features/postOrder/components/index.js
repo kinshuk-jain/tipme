@@ -3,3 +3,4 @@
  * after user clicks on send money
  */
 export { PostOrder } from './postOrder/postOrder.component';
+export { ConfirmTransaction } from './confirmTransaction/confirmTransaction.component';

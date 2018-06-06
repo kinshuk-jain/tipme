@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 import { ScrollView, View, TextInput, Clipboard } from 'react-native';
 import PropTypes from 'prop-types';
 import {
-  AddButton,
+  IconButton,
   HorizontalRule,
 } from '../../../library/components';
 import { CustomText, Footer } from '../../../common';
@@ -23,7 +23,7 @@ export class PostOrder extends PureComponent {
       <View style={styles.container}>
         <ScrollView style={styles.scroller}>
           <CustomText wrapperStyle={styles.centerContent}>{data.message.noKeyText}</CustomText>
-          <AddButton text={data.addButtonData.text} />
+          <IconButton text={data.addButtonData.text} />
           <HorizontalRule style={styles.horizontalRule} text={'OR'} />
           <CustomText wrapperStyle={styles.centerContent}>{data.message.redirectText}</CustomText>
           <View style={[styles.centerContent, styles.urlbox]}>

@@ -15,6 +15,7 @@ module.exports = {
     'react/prefer-stateless-function': 'off',
     'no-prototype-builtins': 'off',
     'react/require-default-props': 'off',
+    'class-methods-use-this': 'off',
     'react/no-array-index-key': 'warn',
     "react/jsx-filename-extension": [1, {
       "extensions": [".js", ".jsx"]
