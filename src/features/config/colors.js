@@ -1,6 +1,7 @@
 export const COLORS = {
   // blue type colors
   CURIOUS_BLUE: '#2089dc',
+  AZURE_RADIANCE: '#007afe',
 
   // violet type colors
   ELECTRIC_VIOLET: '#8F0CE8',
@@ -10,6 +11,7 @@ export const COLORS = {
   GREY_LOBLOLLY: '#bdc6cf',
   GREY_MYSTIC: '#e1e8ee',
   GREY_SILVER: '#bbb',
+  STACK: '#888988',
 
   // black type colors
   SHARK: '#303337',
@@ -24,6 +26,7 @@ export const COLORS = {
   // white type colors
   CONCRETE: '#f2f2f2',
   WHITE: '#ffffff',
+  PORCELAIN: '#eff1f2',
 
   // green type colors
   FOREST_GREEN: '#006400',

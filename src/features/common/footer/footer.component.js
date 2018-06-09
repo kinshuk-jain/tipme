@@ -8,7 +8,7 @@ import { INavigate } from '../../../types/types';
 const CustomFooter = ({ navigation, ...props }) => (
   <View {...props} style={styles.container}>
     <Text onPress={() => navigation.navigate('Home')} style={styles.widget}>accounts</Text>
-    <Text onPress={() => navigation.navigate('PostOrder')} style={styles.transfer}>Transfer</Text>
+    <Text onPress={() => navigation.navigate('Send')} style={styles.transfer}>Transfer</Text>
     <Text style={styles.widget}>contacts</Text>
   </View>
 );

@@ -5,6 +5,8 @@ import { BackHeader } from '../../../library/components';
 import { INavigate } from '../../../../types/types';
 import { data } from './data';
 
+// import { SendMoney } from '../../../sendMoney/components/sendMoney/sendMoney.component';
+
 const HAVE_PVT_KEY = true;
 
 export class PostOrderScreen extends Component {
@@ -19,8 +21,9 @@ export class PostOrderScreen extends Component {
   render() {
     const { navigation } = this.props;
     return HAVE_PVT_KEY
-      ? (<ConfirmTransaction />)
+      ? (<ConfirmTransaction navigation={navigation} />)
       : (<PostOrder data={data} navigation={navigation} />);
+    // return <SendMoney />;
   }
 }
 

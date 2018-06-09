@@ -6,13 +6,13 @@ import { Button, CustomText } from '../../../common';
 import { styles } from './iconButton.styles';
 import { IStyle, IImageSource, IChildren } from '../../../../types/types';
 
-const Icon = ({ source = {} }) => <Image source={source} />;
+const Icon = ({ source = '' }) => <Image source={source} />;
 
 Icon.propTypes = {
   source: IImageSource,
 };
 
-const Text = ({ text = '', textStyle = {}, wrapperStyle = {} }) => (
+const Text = ({ text = '', textStyle = 0, wrapperStyle = 0 }) => (
   <CustomText textStyle={textStyle} wrapperStyle={wrapperStyle}>{text}</CustomText>
 );
 
@@ -29,17 +29,21 @@ export class IconButton extends PureComponent {
     const { text, style, children, ...attributes } = this.props;
     return (
       <Button {...attributes} style={[styles.button, style]}>
-        {children || (<View style={styles.wrapper}>
-          <CustomText textStyle={styles.buttonText}>+</CustomText>
-          <CustomText textStyle={styles.buttonText}>{text}</CustomText>
-        </View>)}
+        {
+          children
+            ? (<View>{children}</View>)
+            : (<View style={styles.wrapper}>
+              <CustomText textStyle={styles.buttonText}>+</CustomText>
+              <CustomText textStyle={styles.buttonText}>{text}</CustomText>
+            </View>)
+        }
       </Button>
     );
   }
 }
 
 IconButton.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.string,
   style: IStyle,
   children: IChildren,
 };

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { CustomText, Button, Avatar } from '../../../common';
 
 import { styles } from './confirmTransaction.styles';
+import { INavigate } from '../../../../types/types';
 
 const ArrowConnectedComponent = (props) => {
   const { left, right } = props;
@@ -69,3 +70,7 @@ export class ConfirmTransaction extends PureComponent {
     );
   }
 }
+
+ConfirmTransaction.propTypes = {
+  navigation: INavigate,
+};

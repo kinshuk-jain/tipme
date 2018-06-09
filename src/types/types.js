@@ -28,3 +28,10 @@ export const IImageSource = PropTypes.oneOfType([
   PropTypes.string,
   PropTypes.object,
 ]).isRequired;
+
+export const ISelectItems = PropTypes.arrayOf(
+  PropTypes.shape({
+    label: PropTypes.string.isRequired,
+    value: PropTypes.any.isRequired,
+  }),
+).isRequired;

@@ -7,3 +7,4 @@ export { Footer } from './footer/footer.component';
 export { CustomText } from './customText/customText.component';
 export { Button } from './button/button.component';
 export { Avatar } from './avatar/avatar.component';
+export { PickerSelect } from './picker/picker.component';
