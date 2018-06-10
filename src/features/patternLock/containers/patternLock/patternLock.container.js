@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import { Dimensions } from 'react-native';
 import { PatternLock } from '../../components';
 
-
 const { width, height } = Dimensions.get('window');
 const PATTERN_CONTAINER_HEIGHT = height / 2;
 const PATTERN_CONTAINER_WIDTH = width;
@@ -20,7 +19,6 @@ const CORRECT_UNLOCK_PATTERN = [
 export class PatternLockScreen extends PureComponent {
   static navigationOptions = {
     title: '',
-    header: null,
   };
 
   onBackPress = () => {

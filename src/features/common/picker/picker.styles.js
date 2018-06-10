@@ -70,5 +70,6 @@ export const styles = StyleSheet.create({
   },
   extraRightPadding: {
     paddingRight: 20,
+    paddingBottom: 10,
   },
 });

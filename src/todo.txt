@@ -1,8 +1,7 @@
 * Password lock screen
 * Settings screen
 * Add private key screen
-* Settings dropdown
 * Add more accounts screen
 * Launch screen - including app icon
-* Login
 * User on boarding screens
+* Login

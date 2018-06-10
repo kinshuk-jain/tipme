@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
       ios: {
         borderBottomWidth: 1,
         borderBottomColor: COLORS.MINE_SHAFT,
-        paddingBottom: 15,
+        // paddingBottom: 15,
       },
     }),
     paddingHorizontal: 5,
