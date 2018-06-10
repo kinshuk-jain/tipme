@@ -65,7 +65,7 @@ export const styles = StyleSheet.create({
   },
   underline: {
     borderTopWidth: 1,
-    borderTopColor: COLORS.STACK,
+    borderTopColor: COLORS.MINE_SHAFT,
     marginHorizontal: 4,
   },
   extraRightPadding: {

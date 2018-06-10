@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
-    "flow": "flow",
+    "flow": "flow ./src",
     "lint": "eslint ./src",
     "lint-fix": "eslint --fix ./src"
   },
@@ -13,6 +13,7 @@
     "prop-types": "15.6.1",
     "react": "16.3.1",
     "react-native": "0.55.4",
+    "react-native-svg": "6.3.1",
     "react-navigation": "2.0.4",
     "react-redux": "5.0.7",
     "redux": "4.0.0",

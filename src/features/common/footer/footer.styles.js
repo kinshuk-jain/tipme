@@ -11,10 +11,11 @@ export const styles = StyleSheet.create({
   },
   widget: {
     flex: 1,
-    textAlign: 'center',
   },
   transfer: {
     flex: 2,
+  },
+  centerText: {
     textAlign: 'center',
   },
 });

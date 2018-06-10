@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     ...Platform.select({
       ios: {
         borderBottomWidth: 1,
-        borderBottomColor: COLORS.SHARK,
+        borderBottomColor: COLORS.MINE_SHAFT,
         paddingBottom: 15,
       },
     }),

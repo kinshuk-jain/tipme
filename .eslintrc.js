@@ -16,6 +16,7 @@ module.exports = {
     'no-prototype-builtins': 'off',
     'react/require-default-props': 'off',
     'class-methods-use-this': 'off',
+    'no-plusplus': 'off',
     'react/no-array-index-key': 'warn',
     "react/jsx-filename-extension": [1, {
       "extensions": [".js", ".jsx"]

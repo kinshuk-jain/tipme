@@ -1,13 +1,7 @@
 import React, { PureComponent } from 'react';
-// import { Platform } from 'react-native';
 import { ShellComponent } from '../components/shell.component';
 
-// const instructions = Platform.select({
-//   ios: 'ios',
-//   android: 'Android',
-// });
-
-// TODO - should provide storage for app, store private key locally
+// TODO - should provide storage for app, store private key locally, lock pattern and hint
 export class Shell extends PureComponent {
   render() {
     return (

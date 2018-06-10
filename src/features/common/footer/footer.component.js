@@ -1,15 +1,29 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
 import { withNavigation } from 'react-navigation';
+import PropTypes from 'prop-types';
+import { CustomText } from '../../common';
 
 import { styles } from './footer.styles';
-import { INavigate } from '../../../types/types';
+import { INavigate, IStyle } from '../../../types/types';
+
+const FooterItem = ({ style, text, onPress }) => (
+  <TouchableOpacity activeOpacity={0.5} onPress={onPress} style={style}>
+    <CustomText textStyle={styles.centerText}>{text}</CustomText>
+  </TouchableOpacity>
+);
+
+FooterItem.propTypes = {
+  style: IStyle,
+  text: PropTypes.string,
+  onPress: PropTypes.func,
+};
 
 const CustomFooter = ({ navigation, ...props }) => (
   <View {...props} style={styles.container}>
-    <Text onPress={() => navigation.navigate('Home')} style={styles.widget}>accounts</Text>
-    <Text onPress={() => navigation.navigate('Send')} style={styles.transfer}>Transfer</Text>
-    <Text style={styles.widget}>contacts</Text>
+    <FooterItem style={styles.widget} text={'accounts'} onPress={() => navigation.navigate('Home')} />
+    <FooterItem style={styles.transfer} text={'transfer'} onPress={() => navigation.navigate('Send')} />
+    <FooterItem style={styles.widget} text={'contacts'} onPress={null} />
   </View>
 );
 
