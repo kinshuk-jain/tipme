@@ -6,6 +6,7 @@ target 'tipme' do
   # use_frameworks!
 
   # Pods for tipme
+  pod 'TesseractOCRiOS'
 
   target 'tipmeTests' do
     inherit! :search_paths

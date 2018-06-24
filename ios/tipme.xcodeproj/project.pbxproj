@@ -44,6 +44,9 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		C7D5F61787CE0009201F6400 /* libPods-tipmeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40FE5D14565B4D2AE4B1EDB /* libPods-tipmeTests.a */; };
 		CB0E8DD383A243A3B6E561AF /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0CC55679584897BB77CECE /* libRNSVG.a */; };
+		ECF6BCAE20D15234002E4511 /* TessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF6BCAD20D15234002E4511 /* TessViewController.m */; };
+		ECF6BCD720D15304002E4511 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = ECF6BCD620D15304002E4511 /* tessdata */; };
+		ECF6BCD920D1B1C9002E4511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF6BCD820D1B1C9002E4511 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -378,6 +381,10 @@
 		CB615A32C24D7FEB910A22DD /* Pods-tipme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipme.release.xcconfig"; path = "Pods/Target Support Files/Pods-tipme/Pods-tipme.release.xcconfig"; sourceTree = "<group>"; };
 		D572FC0D61C3222065871D4D /* libPods-tipme-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tipme-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76D73320EAE308A1E5D85C3 /* Pods-tipme-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipme-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tipme-tvOSTests/Pods-tipme-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		ECF6BCAC20D15234002E4511 /* TessViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TessViewController.h; path = tipme/TessViewController.h; sourceTree = "<group>"; };
+		ECF6BCAD20D15234002E4511 /* TessViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TessViewController.m; path = tipme/TessViewController.m; sourceTree = "<group>"; };
+		ECF6BCD620D15304002E4511 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		ECF6BCD820D1B1C9002E4511 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -541,10 +548,14 @@
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				ECF6BCD820D1B1C9002E4511 /* Main.storyboard */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
+				ECF6BCD620D15304002E4511 /* tessdata */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				ECF6BCAC20D15234002E4511 /* TessViewController.h */,
+				ECF6BCAD20D15234002E4511 /* TessViewController.m */,
 			);
 			name = tipme;
 			sourceTree = "<group>";
@@ -1153,6 +1164,8 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				ECF6BCD720D15304002E4511 /* tessdata in Resources */,
+				ECF6BCD920D1B1C9002E4511 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1290,6 +1303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				ECF6BCAE20D15234002E4511 /* TessViewController.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
