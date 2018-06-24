@@ -3,6 +3,7 @@ import { AccountScreen } from '../accounts';
 import { PostOrderScreen } from '../postOrder';
 import { SendMoneyScreen } from '../sendMoney';
 import { PatternLockScreen } from '../patternLock';
+import { ContactsScreen } from '../contacts';
 
 export const routes = {
   Home: HomeScreen,
@@ -10,4 +11,5 @@ export const routes = {
   PostOrder: PostOrderScreen,
   Send: SendMoneyScreen,
   PatternLock: PatternLockScreen,
+  Contacts: ContactsScreen,
 };

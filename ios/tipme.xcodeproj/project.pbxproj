@@ -44,6 +44,7 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		C7D5F61787CE0009201F6400 /* libPods-tipmeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40FE5D14565B4D2AE4B1EDB /* libPods-tipmeTests.a */; };
 		CB0E8DD383A243A3B6E561AF /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0CC55679584897BB77CECE /* libRNSVG.a */; };
+		EC77F74F20E0229E006DA1D4 /* ContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC77F74E20E0229E006DA1D4 /* ContactsManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -378,6 +379,8 @@
 		CB615A32C24D7FEB910A22DD /* Pods-tipme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipme.release.xcconfig"; path = "Pods/Target Support Files/Pods-tipme/Pods-tipme.release.xcconfig"; sourceTree = "<group>"; };
 		D572FC0D61C3222065871D4D /* libPods-tipme-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tipme-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76D73320EAE308A1E5D85C3 /* Pods-tipme-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipme-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tipme-tvOSTests/Pods-tipme-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC77F74D20E0229E006DA1D4 /* ContactsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ContactsManager.h; path = tipme/ContactsManager.h; sourceTree = "<group>"; };
+		EC77F74E20E0229E006DA1D4 /* ContactsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ContactsManager.m; path = tipme/ContactsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,6 +548,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				EC77F74D20E0229E006DA1D4 /* ContactsManager.h */,
+				EC77F74E20E0229E006DA1D4 /* ContactsManager.m */,
 			);
 			name = tipme;
 			sourceTree = "<group>";
@@ -1291,6 +1296,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				EC77F74F20E0229E006DA1D4 /* ContactsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

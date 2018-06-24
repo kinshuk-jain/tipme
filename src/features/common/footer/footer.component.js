@@ -23,7 +23,7 @@ const CustomFooter = ({ navigation, ...props }) => (
   <View {...props} style={styles.container}>
     <FooterItem style={styles.widget} text={'accounts'} onPress={() => navigation.navigate('Home')} />
     <FooterItem style={styles.transfer} text={'transfer'} onPress={() => navigation.navigate('Send')} />
-    <FooterItem style={styles.widget} text={'contacts'} onPress={null} />
+    <FooterItem style={styles.widget} text={'contacts'} onPress={() => navigation.navigate('Contacts')} />
   </View>
 );
 
