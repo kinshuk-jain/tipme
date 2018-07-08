@@ -44,6 +44,7 @@
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		C7D5F61787CE0009201F6400 /* libPods-tipmeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C40FE5D14565B4D2AE4B1EDB /* libPods-tipmeTests.a */; };
 		CB0E8DD383A243A3B6E561AF /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0CC55679584897BB77CECE /* libRNSVG.a */; };
+		EC2FE4A020F2122600E96027 /* libRCTContacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC2FE49F20F2120A00E96027 /* libRCTContacts.a */; };
 		EC77F74F20E0229E006DA1D4 /* ContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EC77F74E20E0229E006DA1D4 /* ContactsManager.m */; };
 /* End PBXBuildFile section */
 
@@ -321,6 +322,13 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		EC2FE49E20F2120A00E96027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC2FE49A20F2120A00E96027 /* RCTContacts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1441618E1BD0A79300FA4F59;
+			remoteInfo = RCTContacts;
+		};
 		ECF6BBA720D130C5002E4511 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7DDDC83E4A5D42048F8CBBC0 /* RNSVG.xcodeproj */;
@@ -379,6 +387,7 @@
 		CB615A32C24D7FEB910A22DD /* Pods-tipme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipme.release.xcconfig"; path = "Pods/Target Support Files/Pods-tipme/Pods-tipme.release.xcconfig"; sourceTree = "<group>"; };
 		D572FC0D61C3222065871D4D /* libPods-tipme-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tipme-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76D73320EAE308A1E5D85C3 /* Pods-tipme-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tipme-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tipme-tvOSTests/Pods-tipme-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		EC2FE49A20F2120A00E96027 /* RCTContacts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTContacts.xcodeproj; path = "../node_modules/react-native-contacts/ios/RCTContacts.xcodeproj"; sourceTree = "<group>"; };
 		EC77F74D20E0229E006DA1D4 /* ContactsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ContactsManager.h; path = tipme/ContactsManager.h; sourceTree = "<group>"; };
 		EC77F74E20E0229E006DA1D4 /* ContactsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ContactsManager.m; path = tipme/ContactsManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -397,6 +406,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC2FE4A020F2122600E96027 /* libRCTContacts.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -610,6 +620,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				EC2FE49A20F2120A00E96027 /* RCTContacts.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -668,6 +679,14 @@
 			children = (
 				ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */,
 				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC2FE49B20F2120A00E96027 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC2FE49F20F2120A00E96027 /* libRCTContacts.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -816,6 +835,10 @@
 				{
 					ProductGroup = ADBDB9201DFEBF0600ED6528 /* Products */;
 					ProjectRef = ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */;
+				},
+				{
+					ProductGroup = EC2FE49B20F2120A00E96027 /* Products */;
+					ProjectRef = EC2FE49A20F2120A00E96027 /* RCTContacts.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302B61ABCB90400DB3ED1 /* Products */;
@@ -1126,6 +1149,13 @@
 			fileType = archive.ar;
 			path = libRCTBlob.a;
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EC2FE49F20F2120A00E96027 /* libRCTContacts.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTContacts.a;
+			remoteRef = EC2FE49E20F2120A00E96027 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		ECF6BBA820D130C5002E4511 /* libRNSVG.a */ = {

@@ -7,6 +7,8 @@ target 'tipme' do
 
   # Pods for tipme
 
+  pod 'react-native-contacts', :path => '../node_modules/react-native-contacts'
+
   target 'tipmeTests' do
     inherit! :search_paths
     # Pods for testing
