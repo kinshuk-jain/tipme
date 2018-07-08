@@ -10,9 +10,9 @@ import { styles } from './contacts.styles';
 export class Contacts extends PureComponent {
   constructor(props) {
     super(props);
-    this.FirstRoute = () => (<ContactsTab {...props} />);
-    this.SecondRoute = () => (<FacebookTab {...props} />);
-    this.ThirdRoute = () => (<TwitterTab {...props} />);
+    this.FirstRoute = args => () => (<ContactsTab {...args} />);
+    this.SecondRoute = args => () => (<FacebookTab {...args} />);
+    this.ThirdRoute = args => () => (<TwitterTab {...args} />);
     this.state = {
       index: 0,
       routes: [
@@ -37,9 +37,9 @@ export class Contacts extends PureComponent {
         <TabView
           navigationState={this.state}
           renderScene={SceneMap({
-            first: this.FirstRoute,
-            second: this.SecondRoute,
-            third: this.ThirdRoute,
+            first: this.FirstRoute(this.props),
+            second: this.SecondRoute(this.props),
+            third: this.ThirdRoute(this.props),
           })}
           renderTabBar={this.renderTabBar()}
           onIndexChange={index => this.setState({ index })}

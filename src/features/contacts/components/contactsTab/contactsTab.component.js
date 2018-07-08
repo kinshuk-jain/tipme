@@ -18,10 +18,9 @@ export class ContactsTab extends PureComponent {
       .catch(err => console.error(`Error fetch contacts ${err}`));
   }
 
-  onChangeHandler(e) {
-    const input = e.target.value;
-    if (input) {
-      const contacts = this.props.getContactsMatchingString(input);
+  onChangeHandler = (text) => {
+    if (text) {
+      const contacts = this.props.getContactsMatchingString(text);
       this.setState(() => ({
         contacts,
       }));
@@ -34,7 +33,7 @@ export class ContactsTab extends PureComponent {
       <View>
         <TextInput
           placeholder={'Search Contacts...'}
-          onChange={this.onChangeHandler}
+          onChangeText={this.onChangeHandler}
           underlineColorAndroid={COLORS.WHITE}
         />
         <ScrollView>
