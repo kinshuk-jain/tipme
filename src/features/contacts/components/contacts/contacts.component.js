@@ -23,7 +23,7 @@ export class Contacts extends PureComponent {
     };
   }
 
-  renderTabBar = props => (
+  renderTabBar = () => props => (
     <TabBar
       {...props}
       style={{ backgroundColor: COLORS.CURIOUS_BLUE }}
@@ -41,7 +41,7 @@ export class Contacts extends PureComponent {
             second: this.SecondRoute,
             third: this.ThirdRoute,
           })}
-          renderTabBar={this.renderTabBar(this.props)}
+          renderTabBar={this.renderTabBar()}
           onIndexChange={index => this.setState({ index })}
           initialLayout={{ width: Dimensions.get('window').width, height: Dimensions.get('window').height }}
         />

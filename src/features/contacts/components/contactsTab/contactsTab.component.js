@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { View, ScrollView, TextInput } from 'react-native';
 import PropTypes from 'prop-types';
+import { CustomText } from '../../../common';
 import { COLORS } from '../../../config';
 
 export class ContactsTab extends PureComponent {
@@ -37,7 +38,7 @@ export class ContactsTab extends PureComponent {
           underlineColorAndroid={COLORS.WHITE}
         />
         <ScrollView>
-          {JSON.stringify(contacts)}
+          <CustomText>{JSON.stringify(contacts)}</CustomText>
         </ScrollView>
       </View>
     );
